@@ -15,3 +15,20 @@ int getsize(int *x, int *y)
 	return 0;
 }
 #endif
+
+// Unix code
+#ifdef unix
+#include <sys/ioctl.h>
+#include <stdio.h>
+
+int getsize(int *x, int *y)
+{
+	struct winsize w;
+	ioctl(0, TIOCGWINSZ, &w);
+	*x = w.ws_col;
+	*y = w.ws_row;
+
+	return 0;
+}
+
+#endif

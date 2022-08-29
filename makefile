@@ -3,4 +3,4 @@ BinaryLocation = .
 CC = gcc
 
 build:
-	$(CC) src\\*.c src\headers\\*.h -I src\headers -o $(BinaryLocation)\$(BinaryName)
+	$(CC) src/*.c src/headers/*.h -I src/headers -o $(BinaryLocation)/$(BinaryName)
