@@ -14,3 +14,27 @@ int raw_flag(int argc, char **argv)
 	}
 	return 0;
 }
+
+int x_flag(int argc, char **argv)
+{
+	for (int i = 0; i < argc; i++)
+	{
+		if (strcmp(argv[i], X_FLAG) == 0)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
+
+int y_flag(int argc, char **argv)
+{
+	for (int i = 0; i < argc; i++)
+	{
+		if (strcmp(argv[i], Y_FLAG) == 0)
+		{
+			return 1;
+		}
+	}
+	return 0;
+}
