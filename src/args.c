@@ -8,7 +8,7 @@
 	{                                        \
 		for (int i = 0; i < argc; i++)   \
 			if (!strcmp(argv[i], f)) \
-				return 1;        \
+				return i;        \
 		return 0;                        \
 	}
 
